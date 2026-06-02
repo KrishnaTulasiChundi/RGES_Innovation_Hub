@@ -11,14 +11,13 @@ import {
 
 const ProgramsSection = ({ onApply }) => {
   const [expandedProgram, setExpandedProgram] = useState(-1);
-
   const programs = [
     {
-      name: "Spring Cohort 2025",
+      name: "Cohort-1: 2026",
       type: "Full-Time Accelerator",
       duration: "12 Weeks",
-      startDate: "April 2025",
-      deadline: "March 15, 2025",
+      startDate: "August 2026",
+      deadline: "October 15, 2026",
       status: "Open",
       participants: "15-20 Startups",
       description:
@@ -28,40 +27,6 @@ const ProgramsSection = ({ onApply }) => {
         "₹5L funding opportunity",
         "Demo day pitch",
         "Office space access",
-      ],
-    },
-    {
-      name: "Idea Validation Workshop",
-      type: "Weekend Program",
-      duration: "3 Days",
-      startDate: "February 2025",
-      deadline: "January 31, 2025",
-      status: "Open",
-      participants: "30-40 Participants",
-      description:
-        "Fast-paced workshop to validate your startup idea and learn customer discovery techniques.",
-      highlights: [
-        "Customer interviews",
-        "Market sizing",
-        "Business model canvas",
-        "Pitch practice",
-      ],
-    },
-    {
-      name: "Summer Innovation Camp",
-      type: "Student Program",
-      duration: "8 Weeks",
-      startDate: "June 2025",
-      deadline: "May 15, 2025",
-      status: "Upcoming",
-      participants: "20-25 Students",
-      description:
-        "Designed for student founders to build their startups during summer break.",
-      highlights: [
-        "Stipend support",
-        "Peer learning",
-        "Founder sessions",
-        "Prototype development",
       ],
     },
   ];
@@ -78,16 +43,9 @@ const ProgramsSection = ({ onApply }) => {
           <h2
             id="programs-heading"
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-slate-900 tracking-tight"
-            style={{ fontFamily: "Inter, sans-serif" }}
-          >
+            style={{ fontFamily: "Inter, sans-serif" }}>
             Programs & Cohorts
           </h2>
-          <p
-            className="text-lg md:text-xl text-slate-600 max-w-3xl leading-relaxed"
-            style={{ fontFamily: "Inter, sans-serif" }}
-          >
-            Choose the program that fits your stage and commitment level.
-          </p>
         </div>
 
         {/* Programs List */}

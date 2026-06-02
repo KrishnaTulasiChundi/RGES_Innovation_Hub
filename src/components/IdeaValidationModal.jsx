@@ -44,46 +44,46 @@ export const IdeaValidationModal = ({ isOpen, onClose }) => {
 
         <form onSubmit={handleSubmit} className="p-6 space-y-6">
           <div>
-            <Label htmlFor="name">Full Name *</Label>
+            <Label htmlFor="name">Full Name:</Label>
             <Input
               id="name"
               type="text"
               required
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              placeholder="John Doe"
+              placeholder=" Enter Your Full Name"
               className="mt-1"
             />
           </div>
 
           <div>
-            <Label htmlFor="email">Email Address *</Label>
+            <Label htmlFor="email">Email Address:</Label>
             <Input
               id="email"
               type="email"
               required
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              placeholder="john@example.com"
+              placeholder=" Enter Your Email"
               className="mt-1"
             />
           </div>
 
           <div>
-            <Label htmlFor="phone">Phone Number *</Label>
+            <Label htmlFor="phone">Phone Number:</Label>
             <Input
               id="phone"
               type="tel"
               required
               value={formData.phone}
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-              placeholder="+91 98765 43210"
+              placeholder=" Enter Your Phone Number"
               className="mt-1"
             />
           </div>
 
           <div>
-            <Label htmlFor="stage">Current Stage *</Label>
+            <Label htmlFor="stage">Current Stage:</Label>
             <select
               id="stage"
               required
@@ -99,7 +99,7 @@ export const IdeaValidationModal = ({ isOpen, onClose }) => {
           </div>
 
           <div>
-            <Label htmlFor="ideaDescription">Tell us about your idea *</Label>
+            <Label htmlFor="ideaDescription">Tell us about your idea:</Label>
             <Textarea
               id="ideaDescription"
               required
@@ -111,10 +111,10 @@ export const IdeaValidationModal = ({ isOpen, onClose }) => {
           </div>
 
           <div className="flex gap-4">
-            <Button type="submit" className="flex-1 bg-blue-600 hover:bg-blue-700">
+            <Button type="submit" className="flex-1 bg-teal-600">
               Submit for Validation
             </Button>
-            <Button type="button" variant="outline" onClick={onClose} className="flex-1">
+            <Button type="button" variant="outline" onClick={onClose} className="flex-1 bg-teal-600">
               Cancel
             </Button>
           </div>
@@ -123,3 +123,5 @@ export const IdeaValidationModal = ({ isOpen, onClose }) => {
     </div>
   );
 };
+
+export default IdeaValidationModal;

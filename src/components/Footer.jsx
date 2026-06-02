@@ -84,7 +84,7 @@ const Footer = () => {
               className="flex gap-2 text-slate-400 hover:text-white transition"
             >
               <Phone size={16} />
-              +91 83097 21921
+              +91 7032737700
             </a>
           </li>
 

@@ -91,7 +91,7 @@ const CTASection = ({ onApply, onPartner }) => {
 
               {/* Phone */}
               <a
-                href="tel:+91 83097 21921"
+                href="tel:+91 7032737700"
                 className="flex items-center gap-3 sm:gap-4 p-4 sm:p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-colors duration-200"
               >
                 <div className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center flex-shrink-0">
@@ -102,7 +102,7 @@ const CTASection = ({ onApply, onPartner }) => {
                     Call us
                   </div>
                   <div className="text-sm text-white font-medium">
-                    +91 83097 21921
+                    +91 7032737700
                   </div>
                 </div>
               </a>

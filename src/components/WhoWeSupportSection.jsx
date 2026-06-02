@@ -3,38 +3,40 @@ import { GraduationCap, Lightbulb, Users, Zap } from "lucide-react";
 
 const WhoWeSupportSection = () => {
   const [hoveredCard, setHoveredCard] = useState(null);
-
   const supporters = [
     {
       icon: Lightbulb,
       title: "First-Time Entrepreneurs",
       description:
-        "Guidance for founders taking their first leap into entrepreneurship.",
+        "Guidance and support for aspiring founders taking their first step into entrepreneurship.",
+      bgColor:"#c0c0c0",
     },
     {
       icon: GraduationCap,
       title: "Student Founders",
       description:
-        "Support for students building startups while pursuing their education.",
+        "Helping students transform innovative ideas into impactful startup ventures.",
+      bgColor:"#c0c0c0",
     },
     {
       icon: Users,
       title: "Early-Stage Innovators",
-      description: "Resources for teams in the ideation and validation phases.",
+      description: "Resources, mentorship, and validation support for promising early-stage ideas.",
+      bgColor:"#c0c0c0",
     },
     {
       icon: Zap,
       title: "Zero-to-One Builders",
       description:
-        "Tools and mentorship for founders creating something from nothing.",
+        "Empowering builders to create, launch, and grow products from scratch.",
+      bgColor:"#c0c0c0",
     },
   ];
 
   return (
     <section
       aria-labelledby="support-heading"
-      className="py-20 md:py-32 bg-white border-t border-slate-100"
-    >
+      className="py-20 md:py-32 bg-white border-t border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16 sm:mb-20">
@@ -65,28 +67,23 @@ const WhoWeSupportSection = () => {
                 key={index}
                 onMouseEnter={() => setHoveredCard(index)}
                 onMouseLeave={() => setHoveredCard(null)}
-                className="group p-8 rounded-2xl bg-slate-50 hover:bg-slate-900 transition-all duration-300"
-              >
-                <div
-                  className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 transition-colors duration-300
-                    ${isHovered ? "bg-white/10 text-white" : "bg-white text-slate-900 border border-slate-200"}`}
-                >
-                  <Icon className="w-7 h-7" />
+                style={{backgroundColor:supporter.bgColor}}
+                className={`group relative p-8 bg-white border transition-all duration-300 rounded-xl
+                  ${isHovered ? "border-blue-600 shadow-lg" : "border-slate-200"}`}>
+                <div className="mb-6">
+                  <div
+                    className={`w-12 h-12 flex items-center justify-center rounded-lg mb-6 transition-colors duration-300 
+                    ${isHovered ? "bg-blue-600 text-black" : "bg-slate-100 text-black"}`}>
+                    <Icon className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3"
+                    style={{ fontFamily: "Inter, sans-serif" }}>
+                    {supporter.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed transition-colors duration-300">
+                    {supporter.description}
+                  </p>
                 </div>
-
-                <h3
-                  className={`text-xl font-bold mb-3 transition-colors duration-300
-                  ${isHovered ? "text-white" : "text-slate-900"}`}
-                  style={{ fontFamily: "Inter, sans-serif" }}
-                >
-                  {supporter.title}
-                </h3>
-                <p
-                  className={`text-sm leading-relaxed transition-colors duration-300
-                    ${isHovered ? "text-slate-300" : "text-slate-600"}`}
-                >
-                  {supporter.description}
-                </p>
               </div>
             );
           })}

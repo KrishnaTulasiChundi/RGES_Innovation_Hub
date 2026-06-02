@@ -1,13 +1,15 @@
 import React, { useState, useRef, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
-import heroVideo from "../assets/hero_section_bg_vedio2.mp4";
+import heroVideo from "../assets/hero_section_bg_vedio.mp4";
 import mobileVideo from "../assets/mobile-bg-video.mp4";
+import IdeaValidationModal from "./IdeaValidationModal";
 
 const HeroSection = () => {
   const text = "Come Fail, Learn and Build";
   const [displayText, setDisplayText] = useState("");
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const typingRef = useRef(null);
+  const [isModalOpen,setIsModalOpen]=useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -117,10 +119,11 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button
               className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold text-base transition-colors duration-200"
-              style={{ fontFamily: "Inter, sans-serif" }}
+              style={{ fontFamily: "Inter, sans-serif" }} onClick={()=>setIsModalOpen(true)}
             >
               Validate Your Idea
             </button>
+            <IdeaValidationModal isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/>
 
             <a
               href="https://discord.gg/WnC9QRfT"

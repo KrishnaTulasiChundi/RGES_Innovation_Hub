@@ -17,7 +17,8 @@ import { ApplicationModal } from "./components/ApplicationModal.jsx";
 import ChatbotButton from "./components/ChatbotButton.jsx";
 import ArchivesPage from "./components/ArchivesPage.jsx";
 
-import intellirmLogo from "./assets/intellirmLogo.jpg";
+import intellirmLogo from "./assets/intellirms.jpeg";
+import KlouderaLogo from "./assets/Kloudera.jpeg";
 
 function Home({ setIsModalOpen }) {
   return (

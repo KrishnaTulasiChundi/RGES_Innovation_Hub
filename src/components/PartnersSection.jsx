@@ -1,6 +1,7 @@
 import React from "react";
 import { ExternalLink } from "lucide-react";
-import intellirmLogo from "../assets/intellirmLogo.jpg";
+import intellirmLogo from "../assets/intellirms.jpeg";
+import KlouderaLogo from "../assets/Kloudera.jpeg";
 
 const PartnersSection = () => {
   const partners = [
@@ -9,6 +10,12 @@ const PartnersSection = () => {
       logo: intellirmLogo,
       link: "https://intellirms.com",
       description: "Smart Solutions for Risk Management",
+    },
+    {
+      name: "Kloudera",
+      logo: KlouderaLogo,
+      link: "https://www.kloudera.ai/",
+      description: "Smart Solutions for Data Management,Analytics and AI Solutions",
     },
   ];
 
@@ -34,8 +41,7 @@ const PartnersSection = () => {
 
         {/* Partners Grid */}
         <div className="flex justify-center items-center w-full">
-          <div className="grid grid-cols-1 gap-8 justify-center w-full">
-
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center w-full max-w-4xl mx-auto">
             {partners.map((partner, index) => (
               <div key={index} className="flex justify-center">
                 <a
@@ -56,8 +62,7 @@ const PartnersSection = () => {
                 {/* Name */}
                 <h3
                   className="text-xl md:text-2xl font-bold text-slate-900 mb-3"
-                  style={{ fontFamily: "Inter, sans-serif" }}
-                >
+                  style={{ fontFamily: "Inter, sans-serif" }}>
                   {partner.name}
                 </h3>
 
