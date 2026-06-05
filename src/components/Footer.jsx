@@ -74,7 +74,7 @@ const Footer = () => {
               className="flex gap-2 text-slate-400 hover:text-white transition"
             >
               <Mail size={16} />
-              service@rgesinnvationhub.com
+              prasadanumula@rgesinnovationhub.com
             </a>
           </li>
 

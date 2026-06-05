@@ -111,7 +111,7 @@ const AboutSection = () => {
             }}
           ></div>
 
-          <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+          <div className="relative z-10 items-center">
             <div>
               <div className="inline-flex items-center gap-2 mb-6 text-blue-400 font-bold text-xs uppercase tracking-widest">
                 <div className="w-2 h-2 bg-blue-500 rounded-full"></div>

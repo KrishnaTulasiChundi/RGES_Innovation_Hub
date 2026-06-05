@@ -15,8 +15,7 @@ export const ApplicationModal = ({ isOpen, onClose }) => {
           </h2>
           <button
             onClick={onClose}
-            className="text-gray-500 hover:text-gray-700 transition-colors"
-          >
+            className="text-gray-500 hover:text-gray-700 transition-colors">
             <X size={24} />
           </button>
         </div>
@@ -24,7 +23,7 @@ export const ApplicationModal = ({ isOpen, onClose }) => {
         {/* BODY – ONLY CHANGE IS HERE */}
         <div className="h-[80vh] overflow-y-auto">
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfHKpUppNLjiihnlQJeSF-Y15QYuiNdnbVzlYHq4M5Y_csPyw/viewform?embedded=true"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSd8Qf_tHxbjF13nvzfM1AKcq7pJ3hbPDqRWR-fE6Fb35PQGJQ/viewform?embedded=true"
             width="100%"
             height="2350"
             frameBorder="0"
@@ -41,3 +40,4 @@ export const ApplicationModal = ({ isOpen, onClose }) => {
     </div>
   );
 };
+export default ApplicationModal;

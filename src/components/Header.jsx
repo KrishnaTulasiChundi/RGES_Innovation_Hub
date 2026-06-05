@@ -3,7 +3,7 @@ import { Menu, X, ArrowRight } from "lucide-react";
 import logoImg from "../assets/logo.jpeg";
 import { useNavigate, useLocation } from "react-router-dom";
 
-const Header = ({ onApplyClick }) => {
+const Header =()=> {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
@@ -39,6 +39,7 @@ const Header = ({ onApplyClick }) => {
     { id: "blog", label: "Blog" },
     { id: "archives", label: "Archives" },
     { id: "partners", label: "Partners" },
+    { id:  "mentors", label:  "Mentors"},
   ];
 
   const handleNavigation = (item) => {
@@ -105,17 +106,6 @@ const Header = ({ onApplyClick }) => {
                 </button>
               ))}
 
-              <button
-                onClick={onApplyClick}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-lg font-semibold text-sm ${
-                  scrolled
-                    ? "bg-slate-900 text-white hover:bg-slate-800"
-                    : "bg-white text-slate-900 hover:bg-blue-50"
-                }`}
-              >
-                Apply Now
-                <ArrowRight className="w-4 h-4" />
-              </button>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -153,15 +143,6 @@ const Header = ({ onApplyClick }) => {
               </button>
             ))}
 
-            <div className="pt-4 border-t">
-              <button
-                onClick={onApplyClick}
-                className="w-full flex justify-center items-center gap-2 px-5 py-3 bg-slate-900 text-white rounded-lg font-semibold text-sm hover:bg-slate-800"
-              >
-                Apply Now
-                <ArrowRight className="w-4 h-4" />
-              </button>
-            </div>
           </div>
         </div>
       </header>

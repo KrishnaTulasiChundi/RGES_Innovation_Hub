@@ -2,14 +2,14 @@ import React, { useState, useRef, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import heroVideo from "../assets/hero_section_bg_vedio.mp4";
 import mobileVideo from "../assets/mobile-bg-video.mp4";
-import IdeaValidationModal from "./IdeaValidationModal";
+import ApplicationModal from "./ApplicationModal";
 
 const HeroSection = () => {
   const text = "Come Fail, Learn and Build";
   const [displayText, setDisplayText] = useState("");
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const typingRef = useRef(null);
-  const [isModalOpen,setIsModalOpen]=useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,8 +32,7 @@ const HeroSection = () => {
         if (i === text.length) {
           clearInterval(typingRef.current);
           typingRef.current = null;
-          
-          // Restart animation after 2 seconds
+
           setTimeout(startTyping, 2000);
         }
       }, 60);
@@ -75,16 +74,16 @@ const HeroSection = () => {
             backgroundSize: "40px 40px",
           }}
         ></div>
+
         <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-transparent to-slate-950/80 pointer-events-none"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
         <div className="text-center">
+
           {/* Badge */}
-          <div
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-8 bg-slate-900 border border-slate-800"
-          >
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-8 bg-slate-900 border border-slate-800">
             <span
               className="text-xs font-semibold text-blue-400 uppercase tracking-widest"
               style={{ fontFamily: "Inter, sans-serif" }}
@@ -110,31 +109,37 @@ const HeroSection = () => {
             className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed font-normal"
             style={{ fontFamily: "Inter, sans-serif" }}
           >
-            {/*Transform your idea into a fundable startup with hands-on
-            mentorship, validation programs, and a founder-led community.*/}
             Where zero-to-one ideas become battle-tested digital products.
           </p>
 
-          {/* CTA */}
+          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+
             <button
-              className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold text-base transition-colors duration-200"
-              style={{ fontFamily: "Inter, sans-serif" }} onClick={()=>setIsModalOpen(true)}
+              onClick={() => setIsModalOpen(true)}
+              className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold text-base transition-colors duration-200 flex items-center justify-center gap-2"
+              style={{ fontFamily: "Inter, sans-serif" }}
             >
-              Validate Your Idea
+              Apply Now
+              <ArrowRight className="w-4 h-4" />
             </button>
-            <IdeaValidationModal isOpen={isModalOpen} onClose={()=>setIsModalOpen(false)}/>
+
+            <ApplicationModal
+              isOpen={isModalOpen}
+              onClose={() => setIsModalOpen(false)}
+            />
 
             <a
               href="https://discord.gg/WnC9QRfT"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 py-4 bg-transparent hover:bg-slate-900 text-white border border-slate-700 hover:border-slate-600 rounded-xl font-semibold text-base transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full sm:w-auto px-8 py-4 bg-transparent hover:bg-slate-900 text-white border border-slate-700 hover:border-slate-600 rounded-xl font-semibold text-base transition-all duration-200 flex items-center justify-center gap-2"
               style={{ fontFamily: "Inter, sans-serif" }}
             >
               Join the Community
               <ArrowRight className="w-4 h-4" />
             </a>
+
           </div>
         </div>
       </div>
@@ -142,6 +147,7 @@ const HeroSection = () => {
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-pulse">
         <div className="w-[1px] h-12 bg-slate-800"></div>
+
         <span
           className="text-[10px] uppercase tracking-widest text-slate-600 font-medium"
           style={{ fontFamily: "Inter, sans-serif" }}

@@ -40,20 +40,14 @@ const CTASection = ({ onApply, onPartner }) => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 sm:mb-16">
-            <button
-              onClick={onApply}
-              className="w-full sm:w-auto px-8 py-4 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-500 transition-colors duration-200"
-            >
-              Apply as Founder
-            </button>
 
-            <button
-              onClick={onPartner}
-              className="w-full sm:w-auto px-8 py-4 bg-transparent text-white rounded-xl font-bold border border-slate-700 hover:bg-slate-800 transition-colors duration-200 flex items-center justify-center gap-2"
-            >
-              Partner with Us
-              <ArrowRight className="w-5 h-5" />
-            </button>
+            <button onClick={() =>window.open(
+            "https://mail.google.com/mail/?view=cm&fs=1&to=admin@rgesindia.com&su=Partnership%20Inquiry&body=Hello%20RGES%20Innovation%20Hub,",
+            "_blank")}
+            className="w-full sm:w-auto px-8 py-4 bg-transparent text-white rounded-xl font-bold border border-slate-700 hover:bg-slate-800 transition-colors duration-200 flex items-center justify-center gap-2">
+            Partner with Us
+            <ArrowRight className="w-5 h-5" />
+          </button>
           </div>
 
           {/* Contact Info Card */}
@@ -61,8 +55,7 @@ const CTASection = ({ onApply, onPartner }) => {
             <div className="text-center mb-6 sm:mb-8">
               <h3
                 className="text-lg sm:text-xl font-bold text-white mb-2"
-                style={{ fontFamily: "Inter, sans-serif" }}
-              >
+                style={{ fontFamily: "Inter, sans-serif" }}>
                 Have Questions?
               </h3>
               <p className="text-slate-400 text-sm sm:text-base">
@@ -72,10 +65,9 @@ const CTASection = ({ onApply, onPartner }) => {
 
             <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
               {/* Email */}
-              <a
-                href="mailto:hello@rgesinnovationhub.com"
-                className="flex items-center gap-3 sm:gap-4 p-4 sm:p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-colors duration-200"
-              >
+              <button onClick={() =>window.open(
+              "https://mail.google.com/mail/?view=cm&fs=1&to=prasadanumula@rgesinnovationhub.com&su=Inquiry&body=Hello%20RGES%20Innovation%20Hub,","_blank")}
+              className="flex items-center gap-3 sm:gap-4 p-4 sm:p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-colors duration-200 w-full">
                 <div className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center flex-shrink-0">
                   <Mail className="w-5 h-5 text-white" />
                 </div>
@@ -84,16 +76,14 @@ const CTASection = ({ onApply, onPartner }) => {
                     Email us
                   </div>
                   <div className="text-sm text-white font-medium truncate sm:whitespace-normal sm:break-all">
-                    service@rgesinnovationhub.com
+                    prasadanumula@rgesinnovationhub.com
                   </div>
                 </div>
-              </a>
+              </button>
 
               {/* Phone */}
-              <a
-                href="tel:+91 7032737700"
-                className="flex items-center gap-3 sm:gap-4 p-4 sm:p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-colors duration-200"
-              >
+              <button
+                className="flex items-center gap-3 sm:gap-4 p-4 sm:p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-colors duration-200">
                 <div className="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center flex-shrink-0">
                   <Phone className="w-5 h-5 text-white" />
                 </div>
@@ -105,7 +95,7 @@ const CTASection = ({ onApply, onPartner }) => {
                     +91 7032737700
                   </div>
                 </div>
-              </a>
+              </button>
             </div>
           </div>
         </div>

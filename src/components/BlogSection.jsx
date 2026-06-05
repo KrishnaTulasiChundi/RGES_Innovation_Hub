@@ -53,28 +53,28 @@ const BlogSection = () => {
         <>
           <div className="space-y-3">
             <div>
-              <span className="font-bold">Step 1: Identifying a Problem</span>
-              <p>The best startups solve real problems. Founders begin by understanding customer pain points and finding opportunities to create value.</p>
+              <span className="font-bold">Understanding Real Problems</span>
+              <p>Successful innovators focus on understanding customer needs rather than building products based solely on assumptions.</p>
             </div>
             <div>
-              <span className="font-bold">Step 2: Validating the Idea</span>
-              <p>Before investing significant time and money, entrepreneurs test their ideas through research, surveys, interviews, and prototype testing.</p>          
+              <span className="font-bold">Thinking Beyond Conventional Solutions</span>
+              <p>Innovation often comes from questioning existing methods and exploring new approaches to solving challenges.</p>          
             </div>
             <div>
-              <span className="font-bold">Step 3: Building an MVP</span>
-              <p>A Minimum Viable Product (MVP) helps founders launch quickly, gather feedback, and improve their solution based on real user needs.</p>
+              <span className="font-bold">Creating Customer-Centric Products</span>
+              <p>The most impactful startups prioritize user experience, simplicity, and effectiveness in their solutions.</p>
             </div>
             <div>
-              <span className="font-bold">Step 4: Finding Customers</span>
-              <p>A startup succeeds when customers see value in its solution. Early customer feedback is crucial for growth and improvement.</p>
+              <span className="font-bold">Learning Through Experimentation</span>
+              <p>Innovation requires testing, learning, and refining ideas based on market feedback and changing customer expectations.</p>
             </div>
             <div>
-              <span className="font-bold">Step 5: Scaling the Business</span>
-              <p>Once product-market fit is achieved, founders focus on expanding their team, acquiring more customers, and building sustainable growth.</p>
+              <span className="font-bold">Building Sustainable Impact</span>
+              <p>True innovation creates long-term value for customers, businesses, and society.</p>
             </div>
             <div>
               <span className="font-bold">Key Takeaway</span>
-              <p>Success is not about starting with perfect resources. It is about taking the first step, learning continuously, and staying committed to the vision.</p>
+              <p>Innovation succeeds when it solves meaningful problems and improves people's lives in a practical and scalable way.</p>
             </div>          
           </div>
         </>
@@ -87,33 +87,41 @@ const BlogSection = () => {
       title: "Motivation Matters: Why Most Startups Fail & How to Succeed",
       quote: "Success is not final, failure is not fatal: it is the courage to continue that counts.",
       description:
-        "Building a startup is a marathon. Founders face rejection and doubt. What separates successful entrepreneurs? Unwavering motivation and resilience.",
+        "Starting a business is exciting, but the journey is filled with challenges. Understanding common reasons for failure can help founders prepare for success.",
       fullDescription:(
         <>
           <div className="space-y-3">
             <div>
-              <span className="font-bold">Step 1: Identifying a Problem</span>
-              <p>The best startups solve real problems. Founders begin by understanding customer pain points and finding opportunities to create value.</p>
+              <span className="font-bold">Lack of Market Demand</span>
+              <p>Many startups fail because they create products that customers do not actually need.</p>
             </div>
             <div>
-              <span className="font-bold">Step 2: Validating the Idea</span>
-              <p>Before investing significant time and money, entrepreneurs test their ideas through research, surveys, interviews, and prototype testing.</p>          
+              <span className="font-bold">Poor Financial Planning</span>
+              <p>Running out of funds remains one of the most common reasons startups struggle to survive.</p>          
             </div>
             <div>
-              <span className="font-bold">Step 3: Building an MVP</span>
-              <p>A Minimum Viable Product (MVP) helps founders launch quickly, gather feedback, and improve their solution based on real user needs.</p>
+              <span className="font-bold">Weak Team Dynamics</span>
+              <p>A startup's success often depends on the ability of its team to collaborate effectively and execute the vision.</p>
             </div>
             <div>
-              <span className="font-bold">Step 4: Finding Customers</span>
-              <p>A startup succeeds when customers see value in its solution. Early customer feedback is crucial for growth and improvement.</p>
+              <span className="font-bold">Inability to Adapt</span>
+              <p>Markets change rapidly. Startups that fail to adapt risk becoming irrelevant</p>
             </div>
             <div>
-              <span className="font-bold">Step 5: Scaling the Business</span>
-              <p>Once product-market fit is achieved, founders focus on expanding their team, acquiring more customers, and building sustainable growth.</p>
+              <span className="font-bold">How Successful Founders Succeed</span>
+              <p>Stay focused on customer needs.</p>
+              <p>Learn from failures and feedback.</p>
+              <p>Build strong teams and networks.</p>
+              <p>Remain adaptable and open to change.</p>
+              <p>Maintain consistency even during difficult times.</p>
+            </div>
+            <div>
+              <span className="font-bold">The Role of Motivation</span>
+              <p>Motivation provides the energy to keep moving forward despite setbacks. Combined with resilience and determination, it becomes a powerful driver of long-term success.</p>
             </div>
             <div>
               <span className="font-bold">Key Takeaway</span>
-              <p>Success is not about starting with perfect resources. It is about taking the first step, learning continuously, and staying committed to the vision.</p>
+              <p>Failure is not the end of the journey. Every challenge offers an opportunity to learn, improve, and build a stronger business.</p>
             </div>          
           </div>
         </>
