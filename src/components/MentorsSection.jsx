@@ -6,6 +6,7 @@ import Durgesh_Raparthi from "../assets/Durgesh_Raparthi.png";
 import Srilekha_Kaluvakunta from "../assets/Srilekha_Kaluvakunta.png";
 import Shubham_Mishra from "../assets/Shubham_Mishra.png";
 import Srikanth_Parikibandla from "../assets/Srikanth_Parikibandla.png";
+import Priyatam_Kallakuri from "../assets/Priyatam_Kallakuri.jpeg"
 
 const mentors = [
   {
@@ -61,6 +62,16 @@ const mentors = [
     image: Srikanth_Parikibandla,
     calendly: "https://calendly.com/admin-rgesindia/30min",
     linkedin:"https://www.linkedin.com/in/srikanthparikibandla?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+  },
+  {
+    name: "Priyatam Kallakuri",
+    role: "Founder & Principal Advisor",
+    company: "LDP FinMart",
+    bio: "Priyatam Kallakuri is a seasoned business leader with 20+ years of experience across FMCG, Banking & Financial Services, and Insurance. An alumnus of IIM Calcutta, he holds an MBA in Sales & Marketing from Amity University and certifications from NISM and the Insurance Institute of India. He has held leadership roles at Karvy Consultants, Pidilite Industries, Reliance Life Insurance, and IndiaFirst Life Insurance, building high-performing sales networks and leading large teams across India.",
+    skills: ["Sales & Distribution Leadership","Financial Services & Wealth Management","Strategic Business Development"],
+    image: Priyatam_Kallakuri,
+    calendly: "https://calendly.com/admin-rgesindia/30min",
+    linkedin:"https://www.linkedin.com/in/priyatam-kallakuri?utm_source=share_via&utm_content=profile&utm_medium=member_android",
   },
 ];
 
