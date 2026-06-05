@@ -1,7 +1,7 @@
 import React from "react";
 import { ExternalLink } from "lucide-react";
 import intellirmLogo from "../assets/intellirms.png";
-import KlouderaLogo from "../assets/Kloudera.png";
+import KlouderaLogo from "../assets/kloudera.png";
 import IbseaLogo from "../assets/ibsea.png";
 
 const PartnersSection = () => {
